@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #261893;
+    --cta-color: #DBFF5E;
+    --black-color: #262626;
+    --white-color: #f8f8f8;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.bg-navbar {
+    background-color: var(--primary-color);
+}
+
+.logo {
+    font-family: "League Script", cursive;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.btn_cta {
+    background-color: var(--cta-color);
+}
+
+.navbar-nav a {
+    color: var(--white-color);
+}
+
+.navbar-nav .btn_cta {
+    color: var(--black-color);
+}
+
+.active {
+    color: var(--cta-color) !important;
+}
+
+/* HERO SECTION */
+.hero_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(0, 228, 248, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
+        url('../img/img_index/img_hero.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--white-color);
+    padding: 0 20px;
+}
+
+.hero_content {
+    width: 70%;
+}
+
+.hero_content h1 {
+    font-size: 5rem;
+}
+
+.hero_text {
+    font-size: 1.5rem;
+    color: inherit;
+}
