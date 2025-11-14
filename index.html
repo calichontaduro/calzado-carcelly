@@ -21,7 +21,7 @@
     <!-- ICONO NAVEGADOR -->
     <link rel="shortcut icon" href="./assets/icono.png" type="png">
     <!-- COLOR DEL NAVEGADOR MÓVIL -->
-    <meta name="theme-color" content="#">
+    <meta name="theme-color" content="#261893">
 
     <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="./css/index.css">
@@ -34,30 +34,33 @@
         <nav class="navbar navbar-expand-lg bg-navbar">
             <div class="container-lg">
                 <a class="navbar-brand logo" href="#">Calzado Carcelly</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Novedades</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Hombre</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Mujer</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Niños</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="btn btn_cta" href="#">Ofertas</a>
-                    </li>
-                </ul>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <ul class="navbar-nav ms-auto offcanvas-body">
+                        <li class="nav-item">
+                        <a class="nav-link active offcanvas-title" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="btn btn_cta" href="#">Ofertas</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -73,17 +76,56 @@
 </div>
 
     <!-- MAIN -->
-    <main class="container-lg">
+    <main class="container-lg py-5">
         <section>
-            <h2>Nuestra Colección Más Vendida</h2>
+            <h2 class="py-5">Nuestra Colección Más Vendida</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="./img/img_index/deportivo_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Un Clásico Reinventado</h5>
+                        <p class="card-text">Descubre el equilibrio perfecto entre la energía vibrante de la ciudad y un diseño atemporal.</p>
+                        <button class="btn btn_cta">Conocer más</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="./img/img_index/deportivo_2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="./img/img_index/deportivo_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="./img/img_index/deportivo_4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
         </section>
         
-        <section>
-            <h2>Artesanía que Se Siente</h2>
+        <section class="py-5">
+            <h2>Artesanía que se siente</h2>
             <p>Conoce el proceso único detrás de cada par...</p>
         </section>
         
-        <section>
+        <section class="py-5">
             <h3>Lo que Dicen Nuestros Clientes</h3>
         </section>
     </main>
