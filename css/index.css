@@ -6,10 +6,15 @@
 }
 
 :root {
-    --primary-color: #261893;
+    --primary-color: #0081F1;
     --cta-color: #DBFF5E;
     --black-color: #262626;
     --white-color: #f8f8f8;
+    --thirth-color: #d9d9d9;
+}
+
+body {
+    background-color: #FAFAF7;
 }
 
 p {
@@ -24,30 +29,26 @@ a {
 
 /* NAVBAR */
 .bg-navbar {
-    background-color: var(--primary-color);
+    background-color: var(--thirth-color);
 }
 
 .logo {
-    font-family: "League Script", cursive;
+    font-family: "Gwendolyn", cursive;
     font-size: clamp(1.5rem, 1.108vw + 1.169rem, 2rem);
-    color: var(--white-color);
+    color: var(--black-color);
     font-weight: 700;
 }
 
 .btn_cta {
-    background-color: var(--cta-color);
+    background-color: var(--primary-color);
 }
 
 .navbar-nav a {
-    color: var(--white-color);
-}
-
-.navbar-nav .btn_cta {
     color: var(--black-color);
 }
 
-.active {
-    color: var(--cta-color) !important;
+.navbar-nav .btn_cta {
+    color: var(--white-color);
 }
 
 /* HERO SECTION */
