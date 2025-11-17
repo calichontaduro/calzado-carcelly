@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #0081F1;
+    --primary-color: #e0ff4f;
     --cta-color: #DBFF5E;
     --black-color: #262626;
     --white-color: #f8f8f8;
@@ -55,16 +55,16 @@ a {
 /*Main*/
 main {
     flex: 1;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
 }
 
 
 /* Footer */
 
 .footer {
-    border-top: 1px solid #dcdcdc; 
+    border-top: 1px solid #dcdcdc;
     padding: 15px 20px;
-    background-color: #f8f8f8; 
+    background-color: #f8f8f8;
 }
 
 /* Contenido alineado en dos lados */
@@ -86,5 +86,3 @@ main {
 .footer-links a:hover {
     text-decoration: underline;
 }
-
-

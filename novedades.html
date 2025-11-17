@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Descubre Calzado Carcelly, donde la comodidad se encuentra con el arte en cada par de zapatos artesanales hechos a mano. Explora nuestra colección única de calzado de cuero, diseñado para ofrecer estilo y durabilidad. Encuentra el par perfecto que combina tradición y modernidad, ideal para cualquier ocasión." />
+    <meta name="keywords"
+    content="Calzado artesanal, Zapatos hechos a mano, Calzado de cuero artesanal, Zapatos artesanales de calidad,Tienda de calzado artesano, Calzado artesanal en Colombia, Zapatos de diseño artesanal, Calzado cómodo y duradero, Zapatos artesanales exclusivos, Calzado Carcelly" />
+    <meta name="author" content="Calzado Carcelly" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- FUENTES GWENDOLINE - POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ICONO NAVEGADOR -->
+    <link rel="shortcut icon" href="./logo/logo.png" type="png">
+    <!-- COLOR DEL NAVEGADOR MÓVIL -->
+    <meta name="theme-color" content="#261893">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- JAVASCRIPT PERSONALIZADO -->
+    <script src="./JavaScript/main.js" defer></script>
+
+    <title>Novedades | Calzado Carcelly</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-navbar">
+            <div class="container-lg">
+                <a class="navbar-brand logo" href="./index.html">Calzado Carcelly</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <ul class="navbar-nav ms-auto offcanvas-body">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn_cta" href="#">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero_catalogo">
+        <div class="container-lg">
+            <div class="hero_catalogo_content">
+                <h1>Autenticidad en Cada Punto. El Arte de Caminar Bien.</h1>
+                <p>Explora la tradición reinventada. Calzado Carcelly ofrece la combinación perfecta de diseño artesanal en cuero premium y comodidad inigualable para tu día a día.</p>
+                <a href="./todos-estilos.html" class="btn btn_cta btn-lg mt-3">Ver Todos los Estilos</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container-lg mt-5 pt-4">
+
+        <!-- BANNER DESTACADO -->
+        <section class="text-center py-5 bg-light mb-5 rounded shadow-sm">
+            <h1 class="display-4 fw-bold mb-3">Últimas Novedades de Calzado Carcelly</h1>
+            <p class="lead">Descubre las colecciones recién llegadas que fusionan el arte artesanal con el diseño contemporáneo.</p>
+            <a href="#nuevos-modelos" class="btn btn_cta btn-lg mt-3">Ver Colección</a>
+        </section>
+
+        <!-- FILTROS Y BÚSQUEDA -->
+        <section class="mb-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-4">
+                    <select class="form-select" id="filterMonth" aria-label="Filtrar por mes">
+                        <option value="all" selected>Todos los lanzamientos</option>
+                        <option value="septiembre">Septiembre 2025</option>
+                        <option value="agosto">Agosto 2025</option>
+                        <option value="julio">Julio 2025</option>
+                        <option value="otono">Otoño 2025</option>
+                        <option value="verano">Verano 2025</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" id="sortBy" aria-label="Ordenar por">
+                        <option value="recent" selected>Más recientes</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Buscar modelo...">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CONTADOR Y VISTA -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <p class="mb-0 text-muted" id="productCount">Mostrando <strong>12</strong> novedades</p>
+                <div class="btn-group" role="group" aria-label="Vista de productos">
+                    <button type="button" class="btn btn-outline-secondary active" id="gridView">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" id="listView">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODELOS DE LA TEMPORADA -->
+        <section id="nuevos-modelos" class="py-5">
+            <h2 class="text-center mb-5">Modelos de la Temporada</h2>
+            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                
+                <div class="col product-item" data-month="otono" data-name="Colección Aurora">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Zapato de cuero artesanal modelo 'Aurora'">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Colección "Aurora"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Otoño 2025</p>
+                            <p class="card-text">Elegancia y comodidad en cuero italiano. El diseño perfecto para la transición de estación.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="septiembre" data-name="Deportivo Urbano">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-destacado">Destacado</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Deportivos de cuero hechos a mano modelo 'Urbano'">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Deportivo "Urbano"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Septiembre 2025</p>
+                            <p class="card-text">La artesanía se encuentra con el streetwear. Ideal para tu día a día con máximo estilo.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="septiembre" data-name="Botín Andino">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Botines de cuero con detalles tejidos a mano modelo 'Andino'">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Botín "Andino"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Septiembre 2025</p>
+                            <p class="card-text">Resistencia y tradición. Botines robustos con detalles tejidos, hechos para durar.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="verano" data-name="Mocasín Vibrante">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-oferta">-15%</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Mocasines de mujer en colores vibrantes">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mocasín "Vibrante"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Verano 2025</p>
+                            <p class="card-text">Atrévete con el color. Comodidad sin igual para los días cálidos.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="agosto" data-name="Deportivo Clásico">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-actualizado">Actualizado</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Deportivo clásico reinventado">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Deportivo Clásico</h5>
+                            <p class="card-text text-muted small">Actualizado: Agosto 2025</p>
+                            <p class="card-text">Nuestro modelo más vendido, ahora con nuevos acabados en piel premium.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col product-item" data-month="julio" data-name="Zapato Ejecutivo">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Modelo de zapato elegante de Calzado Carcelly">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Zapato "Ejecutivo"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Julio 2025</p>
+                            <p class="card-text">Líneas definidas y pulidas. El calzado de oficina que no sacrifica la comodidad.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="septiembre" data-name="Chelsea Premium">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Botín Chelsea Premium">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chelsea Premium</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Septiembre 2025</p>
+                            <p class="card-text">Estilo británico reinventado. Sofisticación moderna con toque artesanal.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="agosto" data-name="Sneaker Signature">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-destacado">Destacado</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Sneaker Signature">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sneaker Signature</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Agosto 2025</p>
+                            <p class="card-text">Diseño exclusivo con sello Carcelly. Edición limitada de 100 pares.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="julio" data-name="Sandalia Bohemia">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Sandalia Bohemia">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sandalia "Bohemia"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Julio 2025</p>
+                            <p class="card-text">Tejido a mano con detalles en cuero. Perfecta para el verano.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="otono" data-name="Botín Heritage">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-exclusivo">Exclusivo</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Botín Heritage">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Botín "Heritage"</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Otoño 2025</p>
+                            <p class="card-text">Edición limitada con técnicas tradicionales. Solo 50 pares disponibles.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="septiembre" data-name="Loafer Minimalista">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Loafer Minimalista">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Loafer Minimalista</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Septiembre 2025</p>
+                            <p class="card-text">Diseño limpio y atemporal. Versatilidad en su máxima expresión.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col product-item" data-month="agosto" data-name="Runner Tech">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="./img/img_index/colegial_nina_1.jpg" class="card-img-top" alt="Runner Tech">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Runner Tech</h5>
+                            <p class="card-text text-muted small">Lanzamiento: Agosto 2025</p>
+                            <p class="card-text">Tecnología y artesanía unidos. Máximo rendimiento con estilo único.</p>
+                            <button class="btn btn-primary mt-auto">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BANNER EDICIÓN LIMITADA -->
+        <section class="py-5 text-center my-5 bg-info bg-opacity-10 rounded">
+            <h2 class="mb-3">¡Colección Edición Limitada!</h2>
+            <p class="lead mb-4">Solo 50 pares disponibles de nuestro diseño exclusivo "Heritage". No te quedes sin el tuyo.</p>
+            <a href="#" class="btn btn_cta btn-lg">Comprar Ahora</a>
+        </section>
+
+    </main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-5">
+    <div class="container-lg">
+        <div class="row g-4">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="col-md-4">
+                <h3 class="logo mb-3" style="color: white;">Calzado Carcelly</h3>
+                <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 20 años.</p>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-whatsapp fs-4"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="bi bi-envelope fs-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="col-md-2">
+                <h5 class="mb-3">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./novedades.html" class="text-white text-decoration-none">Novedades</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Ofertas</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./contacto.html" class="text-white text-decoration-none">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Categorías -->
+            <div class="col-md-2">
+                <h5 class="mb-3">Categorías</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Hombre</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Mujer</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Niños</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Accesorios</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Contacto -->
+            <div class="col-md-4">
+                <h5 class="mb-3">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="bi bi-geo-alt"></i> 
+                        Cali, Valle del Cauca, Colombia</li>
+                    <li class="mb-2"><i class="bi bi-telephone">
+                        </i> +57 300 123 4567
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-envelope"></i> info@calzadocarcelly.com
+                    </li>
+                    <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 7:00 PM
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-4 bg-light">
+
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2025 Calzado Carcelly. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="text-white text-decoration-none me-3">Política de Privacidad</a>
+                <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+</body>
+</html>
