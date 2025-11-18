@@ -45,6 +45,18 @@ a {
     }
 }
 
+.bi,
+.btn-close {
+    color: #fff !important;
+    border: none !important;
+}
+
+.navbar-toggler,
+.btn-close:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
 .btn_cta {
     background-color: var(--acent-color);
     color: var(--black-color);
@@ -97,6 +109,12 @@ a {
 .hero_text {
     font-size: clamp(1rem, calc(1.1429vw + .6429rem), 1.5rem);
     color: inherit;
+}
+
+.hight-carrousel {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ESTILOS PÁG. NOVEDADES */
