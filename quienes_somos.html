@@ -11,11 +11,11 @@
     <meta name="author" content="Calzado Carcelly" />
 
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- FUENTES GWENDOLINE - POPPINS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,12 @@
     <meta name="theme-color" content="#261893">
 
     <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <title>Calzado Carcelly | Zapatos Hechos a Mano y Artesanales</title>
+    <title>¿Quiénes Somos? | Zapatos Hechos a Mano y Artesanales</title>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg bg-navbar">
@@ -62,16 +61,13 @@
                             <a class="nav-link" href="#">Hombre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mujer</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Niños</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link me-3" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn_cta" href="#">Ofertas</a>
+                            <button class="btn btn_cta" href="#">Ofertas</button>
                         </li>
                     </ul>
                 </div>
@@ -79,77 +75,74 @@
         </nav>
     </header>
 
-    <main class="container-lg mt-5">
-        <div>
-            <div>
-                <p>Nuestra Trayectoria</p>
-                <h2 class="text-center mt-5">La Historia de un Legado</h2>
-                <p class="text-center">
-                    Calzado Carcelly es una marca con raíces profundas en la tradición artesanal del calzado.
-                    Fundada en 1958 por el maestro zapatero, Don Ricardo Carcelly, nuestra historia es un testimonio
-                    de pasión, dedicación y un compromiso inquebrantable con la calidad.
+<!-- QUIENES SOMOS -->
+    <main class="container-lg my-5 pt-4">
+        <section class="text-center py-5 bg my-5 rounded shadow-sm">
+                <h2 class="text-center pb-3">Nuestra Trayectoria</h2>
+                <p class="text-center px-4">
+                    Calzado Carcelly es una marca con raíces profundas en la tradición artesanal del calzado. Fundada en 1998 por el maestro zapatero, <b>Carlos Cepeda Lizarazo</b>, nuestra historia es un testimonio de pasión, dedicación y un compromiso inquebrantable con la calidad.
+                </p>
+        </section>
+
+        <section class="row row-cols-2 g-4 my-5 pt-5">
+            <div class="col-lg-7 col-12">
+                <h3 class="mb-4">Sus Orígenes</h3>
+                <p class="mb-4">
+                    En un pequeño taller en el corazón de la ciudad, <b>Carlos Cepeda Lizarazo</b> comenzó a dar forma a su sueño. Con herramientas sencillas y una habilidad innata, creaba zapatos a medida que reflejaban la elegancia y el confort. Su reputación creció rápidamente, atrayendo a clientes que valoraban la autenticidad y el trabajo bien hecho.
+                </p>
+                <p class="text-background-dark/80 dark:text-background-light/80">
+                    A lo largo de los años, hemos evolucionado, pero sin perder nuestra esencia. Hemos ampliado nuestra gama, incorporando nuevas técnicas, pero siempre manteniendo el cuidado artesanal que nos distingue.
                 </p>
             </div>
-            <div class="row mt-5">
-                <div class="col-6">
-                    <h3 class="text-3xl font-bold mb-4">Orígenes Humildes</h3>
-                    <p class="text-background-dark/80 dark:text-background-light/80 mb-4">
-                        En un pequeño taller en el corazón de la ciudad, Don Ricardo Carcelly comenzó a dar forma a
-                        su sueño. Con herramientas sencillas y una habilidad innata, creaba zapatos a medida que
-                        reflejaban la elegancia y el confort. Su reputación creció rápidamente, atrayendo a clientes
-                        que valoraban la autenticidad y el trabajo bien hecho.
-                    </p>
-                    <p class="text-background-dark/80 dark:text-background-light/80">
-                        A lo largo de los años, hemos evolucionado, pero sin perder nuestra esencia. Hemos ampliado
-                        nuestra gama, incorporando nuevas técnicas, pero siempre manteniendo el cuidado artesanal
-                        que nos distingue.
-                    </p>
-                </div>
-                <div class="col-5">
-                    <img alt="Taller de zapatería antiguo" class="w-full h-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAU6Z1hcgO6tbyKIwqpBn0csl3fDteauWJ1O4KfbtYqlmBwHhm126IfNhuimqT7QdAQt9TtTqzpUpmmDWl3KAAE3GswGAILvWAEXtYLkd7Ol3GgUbeR2rqAH88NXoDZSGR1CrQyNWTiaIPJg22WatodfquYeqPA5WAJeZNmEsv8g39rogrTP__SbHf0B0YMrxuwgOK8OTKBJ-JhaltzXffvgOfMPHNoFqQpWgBeP82LdX9X_FwwLvCa0NkJfGrdoBpHb0MrJzLqGQ" />
-                </div>
+
+            <div class="col-lg-5 col-12">
+                <img alt="Taller de zapatería antiguo" class="w-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAU6Z1hcgO6tbyKIwqpBn0csl3fDteauWJ1O4KfbtYqlmBwHhm126IfNhuimqT7QdAQt9TtTqzpUpmmDWl3KAAE3GswGAILvWAEXtYLkd7Ol3GgUbeR2rqAH88NXoDZSGR1CrQyNWTiaIPJg22WatodfquYeqPA5WAJeZNmEsv8g39rogrTP__SbHf0B0YMrxuwgOK8OTKBJ-JhaltzXffvgOfMPHNoFqQpWgBeP82LdX9X_FwwLvCa0NkJfGrdoBpHb0MrJzLqGQ" />
             </div>
+        </section>
 
-        </div>
-
-
-        <div class="row">
-            <div class="col-6">
-                <img alt="Zapatos en exhibición" class="w-full h-full object-cover aspect-square"
+        <div class="row row-cols-2 g-4 my-5 pt-5">
+            <div class="col-lg-6 col-12">
+                <img alt="Zapatos en exhibición" class="w-100"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWgQxOCC078-zuuRaPRrCMq8KvR30peVftGJ95ZMef7selIIX04mgFVPXdymoMhbgGELgxiUAhwui4ey1_pb0isAl0nyX9GyfxJ7nGG7HrkEaH-zMtVoBpbQ8Ya0JeKeCzENtau2K7pe32cux1hsBeNu8wbp7f5fwOVxE8ph-B3z9oxpUYwy3iFz3ogDO0KDK2LHCLhf_URDwNZ_16rt1VHto6RtBPgey-D5-dF08760iAuZDCMwuaAmh8dIDp1j2gHSOKePGkYPk" />
 
             </div>
-            <div class="col-5">
-                <img alt="Herramientas de zapatero" class="w-full h-full object-cover aspect-square"
+            <div class="col-lg-6 col-12">
+                <img alt="Herramientas de zapatero" class="w-100"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCubRLtzRsvxJsWRt_zTw95F4XsV-o29M8vTc_6I0zBIicSD5JX8H8hDwWNMXIyvQgLckgkj4DWihDYA9ZsnZTO36KT8nxZtO93NJu_B_MGy3rGurZ9wu9-0sGKHkjyCtJC-BB4XTKvmeuJczD4mU8n7Ya34ttHco8LM55cOqR8i-fKhObgaPUuY0b5dBShFuFq9PdY810ee47aJqz2uV8s8DstQJfvusOmdXdwSjnGeFjC03AGZkfZdO0Vm9DIvw96wPNxYp_lfaw" />
             </div>
         </div>
-
     </main>
-    <!-- FOOTER -->
+
+<!-- FOOTER -->
     <footer class="bg-dark text-white py-5">
         <div class="container-lg">
             <div class="row g-4">
                 <!-- Columna 1: Logo y descripción -->
                 <div class="col-md-4">
-                    <h3 class="logo mb-3" style="color: white;">Calzado Carcelly</h3>
-                    <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 20
-                        años.</p>
+                    <h3 class="logo mb-3 text-white">Calzado Carcelly</h3>
+                    <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 30 años.</p>
                     <div class="social-icons mt-3">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-envelope fs-4"></i></a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-whatsapp fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Columna 2: Enlaces rápidos -->
                 <div class="col-md-2">
-                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <h5 class="mb-3 title-color">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="./quienes_somos.html" class="text-white text-decoration-none">Quienes Somos</a>
+                            <a href="#" class="text-white text-decoration-none">¿Quiénes Somos?</a>
                         </li>
                         <li class="mb-2">
                             <a href="./novedades.html" class="text-white text-decoration-none">Novedades</a>
@@ -165,30 +158,34 @@
 
                 <!-- Columna 3: Categorías -->
                 <div class="col-md-2">
-                    <h5 class="mb-3">Categorías</h5>
+                    <h5 class="mb-3 title-color">Categorías</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Hombre</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Mujer</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Niños</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Accesorios</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none">Hombre</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none">Niños</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none">Colegiales</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Columna 4: Contacto -->
                 <div class="col-md-4">
-                    <h5 class="mb-3">Contáctanos</h5>
+                    <h5 class="mb-3 title-color">Contáctanos</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <i class="bi bi-geo-alt"></i>
-                            Cali, Valle del Cauca, Colombia
-                        </li>
+                            <i class="bi bi-geo-alt"></i> 
+                            Cali, Valle del Cauca, Colombia</li>
                         <li class="mb-2"><i class="bi bi-telephone">
                             </i> +57 300 123 4567
                         </li>
                         <li class="mb-2">
-                            <i class="bi bi-envelope"></i> info@calzadocarcelly.com
+                            <i class="bi bi-envelope"></i> calzadocarcelly@gmail.com.com
                         </li>
-                        <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 7:00 PM
+                        <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 4:00 PM
                         </li>
                     </ul>
                 </div>
@@ -208,5 +205,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -37,24 +38,37 @@ a {
     font-size: clamp(1.5rem, 1.108vw + 1.169rem, 2rem);
     color: var(--white-color);
     font-weight: 700;
+    user-select: none;
+
+    &:hover {
+        color: var(--acent-color);
+    }
 }
 
 .btn_cta {
     background-color: var(--acent-color);
+    color: var(--black-color);
+
+    &:hover {
+        background-color: var(--white-color);
+        color: var(--black-color);
+        border: 1px solid var(--black-color);
+    }
 }
 
 .navbar-nav a {
     color: var(--white-color);
-}
 
-.navbar-nav .btn_cta {
-    color: var(--black-color);
+    &:hover {
+        color: var(--acent-color);
+    }
 }
 
 .active {
     color: var(--acent-color) !important;
 }
 
+/* ESTILOS PÁG. INDEX */
 /* HERO SECTION */
 .hero_section {
     width: 100%;
@@ -64,7 +78,7 @@ a {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(180deg, rgba(0, 228, 248, 0) 0%, rgba(0, 0, 0, 0.85) 100%),
-        url('../img/img_index/img_hero.png');
+        url('../img/img_hero.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -85,75 +99,10 @@ a {
     color: inherit;
 }
 
-/* NOVEDADES */
-/* HERO SECTION */
-.hero_catalogo {
-    width: 100%;
-    padding: 8rem 0 5rem 0;
-    margin-top: 56px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero_catalogo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, .05) 35px, rgba(255, 255, 255, .05) 70px),
-        repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255, 255, 255, .03) 35px, rgba(255, 255, 255, .03) 70px);
-    pointer-events: none;
-}
-
-.hero_catalogo_content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: var(--white-color);
-}
-
-.hero_catalogo_content h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hero_catalogo_content p {
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: 0.95;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.hero_catalogo_content .btn {
-    margin-top: 2rem;
-}
-
-/* BREADCRUMBS */
-.breadcrumb {
-    background-color: transparent;
-    padding: 0;
-    margin-bottom: 1.5rem;
-}
-
-.breadcrumb-item a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.breadcrumb-item a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-    color: #666;
+/* ESTILOS PÁG. NOVEDADES */
+/* BANNER DESTACADO */
+.bg {
+    background-color: var(--acent-color);
 }
 
 /* FILTROS */
@@ -229,6 +178,10 @@ a {
     color: #999 !important;
 }
 
+.price-color-before {
+    color: #999;
+}
+
 /* BADGES DE PRODUCTOS */
 .badge-nuevo,
 .badge-oferta,
@@ -245,11 +198,12 @@ a {
     z-index: 10;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    user-select: none;
 }
 
 .badge-nuevo {
-    background-color: #28a745;
-    color: white;
+    background-color: var(--acent-color);
+    color: var(--black-color);
 }
 
 .badge-oferta {
@@ -282,22 +236,6 @@ a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Botones Ver Detalle */
-.product-card .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white-color) !important;
-    border: 2px solid var(--primary-color);
-    transition: all 0.3s ease;
-}
-
-.product-card .btn-primary:hover {
-    background-color: #0066cc;
-    color: var(--white-color) !important;
-    border-color: #0066cc;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 129, 241, 0.3);
-}
-
 /* Asegurar que el contenido de las cards no herede color del hero */
 .card,
 .card-body,
@@ -306,9 +244,28 @@ a {
     color: var(--black-color) !important;
 }
 
+/*  */
+/* CONTACTO */
+.img-contact {
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+}
+
+.img-contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* FOOTER */
 .bg-footer {
     background-color: var(--primary-color);
+}
+
+.title-color {
+    color: var(--acent-color);
 }
 
 footer {
