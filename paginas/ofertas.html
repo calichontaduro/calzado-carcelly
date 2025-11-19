@@ -22,17 +22,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- ICONO NAVEGADOR -->
-    <link rel="shortcut icon" href="./logo/logo.png" type="png">
+    <link rel="shortcut icon" href="../logo/logo.png" type="png">
+
     <!-- COLOR DEL NAVEGADOR MÓVIL -->
-    <meta name="theme-color" content="#261893">
+    <meta name="theme-color" content="#383838">
 
     <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!-- JAVASCRIPT PERSONALIZADO -->
-    <script src="./JavaScript/ofertas.js" defer></script>
+    <script src="../JavaScript/ofertas.js" defer></script>
 
-    <title>Calzado Carcelly | Zapatos Hechos a Mano y Artesanales</title>
+    <title>Ofertas | Calzado Carcelly</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -40,7 +41,7 @@
         <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg bg-navbar position-relative">
             <div class="container-lg">
-                <a class="navbar-brand logo" href="./index.html">Calzado Carcelly</a>
+                <a class="navbar-brand logo" href="../index.html">Calzado Carcelly</a>
 
                 <!-- MENÚ HAMBURGUESA -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,22 +55,22 @@
                     <div class="offcanvas-body bg-navbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./novedades.html">Novedades</a>
+                                <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./hombres.html">Hombre</a>
+                                <a class="nav-link" href="../paginas/hombres.html">Hombres</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./niños.html">Niños</a>
+                                <a class="nav-link" href="../paginas/escolares.html">Escolares</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-3" href="./contacto.html">Contacto</a>
+                                <a class="nav-link me-3" href="../paginas/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn_cta" href="#">Ofertas</a>
+                                <a class="btn btn_cta ofertas" aria-current="page" href="../paginas/ofertas.html">Ofertas</a>
                             </li>
                         </ul>
                     </div>
@@ -129,125 +130,65 @@
             
             <!-- CONTADOR Y VISTA -->
             <div class="d-flex justify-content-between align-items-center mt-3">
-                <p class="mb-0 text-muted" id="productCount">Mostrando <strong>24</strong> de <strong>48</strong> productos</p>
-                <!-- <div class="btn-group" role="group" aria-label="Vista de productos">
-                    <button type="button" class="btn btn-outline-secondary active" id="gridView">
-                        <i class="bi bi-grid-3x3-gap"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary" id="listView">
-                        <i class="bi bi-list"></i>
-                    </button>
-                </div> -->
+                <p class="mb-0 text-muted" id="productCount">Mostrando <strong>10</strong> de <strong>10</strong> productos</p>
             </div>
         </section>
 
         <!-- PRODUCTOS HOMBRE -->
         <section class="mb-5" data-category="hombre">
-            <h2 class="my-5 pb-2 border-bottom">Calzado para Hombre</h2>
+            <h2 class="my-5 pb-2 border-bottom">Calzado para Hombres</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="productGrid">
                 
-                <div class="col product-item" data-category="hombre" data-style="formales" data-price="245000" data-name="Ejecutivo Premium">
+                <div class="col product-item" data-category="hombre" data-style="formales" data-price="115000" data-name="Ejecutivo Premium">
                     <div class="card h-100 shadow-sm border-0 product-card">
                         <span class="badge-nuevo">Nuevo</span>
-                        <img src="./img/zapato_formal.jpg" class="card-img-top" alt="Zapato formal hombre">
+                        <img src="../img/zapato_formal_1.jpg" class="card-img-top" alt="Zapato formal hombre">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Ejecutivo Premium</h5>
                             <p class="card-text text-muted small">Cuero italiano</p>
-                            <p class="fw-bold text-primary mb-2">$245.000 COP</p>
+                            <p class="fw-bold mb-2">$115.000 COP</p>
                             <p class="card-text small">Elegancia atemporal para el profesional moderno.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="hombre" data-style="deportivos" data-price="195000" data-name="Deportivo Urbano">
+                <div class="col product-item" data-category="hombre" data-style="deportivos" data-price="88000" data-name="Deportivo Urbano">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-oferta">-15%</span>
-                        <img src="./img/deportivo_2.jpg" class="card-img-top" alt="Deportivo hombre">
+                        <span class="badge-oferta">-20%</span>
+                        <img src="../img/colegial_deportivo_2.jpg" class="card-img-top" alt="Deportivo hombre">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Deportivo Urbano</h5>
-                            <p class="card-text text-muted small">Cuero premium</p>
-                            <p class="fw-bold text-primary mb-2">$195.000 COP</p>
+                            <p class="card-text text-muted small">Sintético</p>
+                            <p class="fw-bold mb-2">$88.000 COP</p>
                             <p class="card-text small">Estilo casual con máxima comodidad.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="hombre" data-style="botines" data-price="265000" data-name="Botín Andino">
+                <div class="col product-item" data-category="hombre" data-style="botines" data-price="95000" data-name="Botín Andino">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/deportivo_3.jpg" class="card-img-top" alt="Botín hombre">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="../img/mocasin_negro.png" class="card-img-top" alt="Botín hombre">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Botín Andino</h5>
-                            <p class="card-text text-muted small">Cuero resistente</p>
-                            <p class="fw-bold text-primary mb-2">$265.000 COP</p>
+                            <h5 class="card-title">Mocasín Negro</h5>
+                            <p class="card-text text-muted small">Tela Resistente</p>
+                            <p class="fw-bold mb-2">$95.000 COP</p>
                             <p class="card-text small">Robustez y estilo para cualquier terreno.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="hombre" data-style="casuales" data-price="215000" data-name="Mocasín Clásico">
+                <div class="col product-item" data-category="hombre" data-style="casuales" data-price="95000" data-name="Mocasín Clásico">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/deportivo_4.jpg" class="card-img-top" alt="Mocasín hombre">
+                        <img src="../img/mocasin_azul.png" class="card-img-top" alt="Mocasín hombre">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Mocasín Clásico</h5>
+                            <h5 class="card-title">Mocasín Clásico Azul</h5>
                             <p class="card-text text-muted small">Cuero suave</p>
-                            <p class="fw-bold text-primary mb-2">$215.000 COP</p>
+                            <p class="fw-bold mb-2">$95.000 COP</p>
                             <p class="card-text small">Comodidad sin cordones para el día a día.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="hombre" data-style="casuales" data-price="225000" data-name="Casual Premium">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/deportivo_1.jpg" class="card-img-top" alt="Zapato casual hombre">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Casual Premium</h5>
-                            <p class="card-text text-muted small">Cuero flexible</p>
-                            <p class="fw-bold text-primary mb-2">$225.000 COP</p>
-                            <p class="card-text small">Versatilidad en su máxima expresión.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="hombre" data-style="formales" data-price="275000" data-name="Oxford Tradicional">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/deportivo_2.jpg" class="card-img-top" alt="Oxford hombre">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Oxford Tradicional</h5>
-                            <p class="card-text text-muted small">Cuero de lujo</p>
-                            <p class="fw-bold text-primary mb-2">$275.000 COP</p>
-                            <p class="card-text small">Elegancia clásica que nunca pasa de moda.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="hombre" data-style="deportivos" data-price="185000" data-name="Runner Sport">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/deportivo_3.jpg" class="card-img-top" alt="Deportivo runner">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Runner Sport</h5>
-                            <p class="card-text text-muted small">Material transpirable</p>
-                            <p class="fw-bold text-primary mb-2">$185.000 COP</p>
-                            <p class="card-text small">Ligereza y confort para tus entrenamientos.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="hombre" data-style="botines" data-price="295000" data-name="Botín Chelsea">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-nuevo">Nuevo</span>
-                        <img src="./img/deportivo_4.jpg" class="card-img-top" alt="Botín Chelsea">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Botín Chelsea</h5>
-                            <p class="card-text text-muted small">Estilo británico</p>
-                            <p class="fw-bold text-primary mb-2">$295.000 COP</p>
-                            <p class="card-text small">Sofisticación moderna con toque clásico.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
@@ -261,108 +202,57 @@
             <h2 class="my-5 pb-2 border-bottom">Calzado Colegial</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 
-                <div class="col product-item" data-category="mujer" data-style="formales" data-price="235000" data-name="Colección Aurora">
+                <div class="col product-item" data-category="mujer" data-style="formales" data-price="85000" data-name="Colección Aurora">
                     <div class="card h-100 shadow-sm border-0 product-card">
                         <span class="badge-nuevo">Nuevo</span>
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Zapato mujer Aurora">
+                        <img src="../img/colegial_nina.jpg" class="card-img-top" alt="Zapato mujer Aurora">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Colección Aurora</h5>
-                            <p class="card-text text-muted small">Cuero italiano</p>
-                            <p class="fw-bold text-primary mb-2">$235.000 COP</p>
+                            <h5 class="card-title">Clásicos Escolares</h5>
+                            <p class="card-text text-muted small">Hecho en Cuero</p>
+                            <p class="fw-bold mb-2">$85.000 COP</p>
                             <p class="card-text small">Elegancia y comodidad en cada paso.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="mujer" data-style="casuales" data-price="189000" data-name="Mocasín Vibrante">
+                <div class="col product-item" data-category="hombre" data-style="formales" data-price="85000" data-name="Colección Aurora">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-oferta">-20%</span>
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Mocasín mujer vibrante">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="../img/colegial_nino.jpg" class="card-img-top" alt="Zapato mujer Aurora">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Mocasín Vibrante</h5>
-                            <p class="card-text text-muted small">Colores vivos</p>
-                            <p class="fw-bold text-primary mb-2">$189.000 COP</p>
-                            <p class="card-text small">Atrévete con el color y la comodidad.</p>
+                            <h5 class="card-title">Clásicos Escolares</h5>
+                            <p class="card-text text-muted small">Hecho en Cuero</p>
+                            <p class="fw-bold mb-2">$85.000 COP</p>
+                            <p class="card-text small">Elegancia y comodidad en cada paso.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="mujer" data-style="casuales" data-price="165000" data-name="Sandalia Artesanal">
+                <div class="col product-item" data-category="hombre" data-style="deportivos" data-price="65000" data-name="Deportivo Urbano">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Sandalia artesanal">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="../img/colegial_deportivo.jpg" class="card-img-top" alt="Zapato mujer Aurora">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Sandalia Artesanal</h5>
-                            <p class="card-text text-muted small">Tejido a mano</p>
-                            <p class="fw-bold text-primary mb-2">$165.000 COP</p>
-                            <p class="card-text small">Frescura y estilo para días soleados.</p>
+                            <h5 class="card-title">Colegial Deportivo</h5>
+                            <p class="card-text text-muted small">Sintético</p>
+                            <p class="fw-bold mb-2">$65.000 COP</p>
+                            <p class="card-text small">Elegancia y comodidad en cada paso.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="mujer" data-style="botines" data-price="255000" data-name="Botín Elegante">
+                <div class="col product-item" data-category="hombre" data-style="deportivos" data-price="75000" data-name="Colección Aurora">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Botín elegante mujer">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="../img/colegial_deportivo_2.jpg" class="card-img-top" alt="Zapato mujer Aurora">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Botín Elegante</h5>
-                            <p class="card-text text-muted small">Cuero premium</p>
-                            <p class="fw-bold text-primary mb-2">$255.000 COP</p>
-                            <p class="card-text small">Sofisticación para cualquier ocasión.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="mujer" data-style="casuales" data-price="175000" data-name="Baleta Clásica">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Baleta clásica">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Baleta Clásica</h5>
-                            <p class="card-text text-muted small">Comodidad total</p>
-                            <p class="fw-bold text-primary mb-2">$175.000 COP</p>
-                            <p class="card-text small">Perfectas para uso diario y ocasiones especiales.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="mujer" data-style="formales" data-price="245000" data-name="Stiletto Premium">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Stiletto premium">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Stiletto Premium</h5>
-                            <p class="card-text text-muted small">Alta elegancia</p>
-                            <p class="fw-bold text-primary mb-2">$245.000 COP</p>
-                            <p class="card-text small">Glamour y sofisticación en cada paso.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="mujer" data-style="deportivos" data-price="205000" data-name="Sneaker Chic">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Sneaker chic">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Sneaker Chic</h5>
-                            <p class="card-text text-muted small">Moda urbana</p>
-                            <p class="fw-bold text-primary mb-2">$205.000 COP</p>
-                            <p class="card-text small">Estilo casual con un toque fashion.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="mujer" data-style="casuales" data-price="198000" data-name="Alpargata Verano">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-oferta">-10%</span>
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Alpargata verano">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Alpargata Verano</h5>
-                            <p class="card-text text-muted small">Ligera y fresca</p>
-                            <p class="fw-bold text-primary mb-2">$198.000 COP</p>
-                            <p class="card-text small">El calzado perfecto para clima cálido.</p>
+                            <h5 class="card-title">Colegial Deportivo</h5>
+                            <p class="card-text text-muted small">Sintético</p>
+                            <p class="fw-bold mb-2">$75.000 COP</p>
+                            <p class="card-text small">Elegancia y comodidad en cada paso.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
@@ -371,112 +261,32 @@
             </div>
         </section>
 
-        <!-- PRODUCTOS NIÑOS -->
-        <section class="mb-5" data-category="ninos">
-            <h2 class="my-5 pb-2 border-bottom">Calzado para Niños</h2>
+        <!-- PRODUCTOS CASUALES -->
+        <section class="mb-5" data-category="casuales">
+            <h2 class="my-5 pb-2 border-bottom">Calzado Casual</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 
-                <div class="col product-item" data-category="ninos" data-style="formales" data-price="145000" data-name="Colegial Clásico">
+                <div class="col product-item" data-category="casuales" data-style="formales" data-price="95000" data-name="Colegial Clásico">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Zapato colegial niña">
+                        <img src="../img/mocasin_azul.png" class="card-img-top" alt="Zapato colegial niña">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Colegial Clásico</h5>
+                            <h5 class="card-title">Mocasín Azul</h5>
                             <p class="card-text text-muted small">Cuero resistente</p>
-                            <p class="fw-bold text-primary mb-2">$145.000 COP</p>
+                            <p class="fw-bold mb-2">$95.000 COP</p>
                             <p class="card-text small">Durabilidad para el día escolar.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col product-item" data-category="ninos" data-style="deportivos" data-price="135000" data-name="Deportivo Kids">
+                <div class="col product-item" data-category="casuales" data-style="formales" data-price="95000" data-name="Colegial Clásico">
                     <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-nuevo">Nuevo</span>
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Deportivo niño">
+                        <img src="../img/mocasin_negro.png" class="card-img-top" alt="Zapato colegial niña">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Deportivo Kids</h5>
-                            <p class="card-text text-muted small">Flexible y cómodo</p>
-                            <p class="fw-bold text-primary mb-2">$135.000 COP</p>
-                            <p class="card-text small">Perfecto para jugar todo el día.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="casuales" data-price="115000" data-name="Sandalia Infantil">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Sandalia infantil">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Sandalia Infantil</h5>
-                            <p class="card-text text-muted small">Ligera y fresca</p>
-                            <p class="fw-bold text-primary mb-2">$115.000 COP</p>
-                            <p class="card-text small">Ideal para clima cálido.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="botines" data-price="155000" data-name="Botín Aventura">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Botín niño">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Botín Aventura</h5>
-                            <p class="card-text text-muted small">Extra resistente</p>
-                            <p class="fw-bold text-primary mb-2">$155.000 COP</p>
-                            <p class="card-text small">Para pequeños exploradores.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="deportivos" data-price="125000" data-name="Runner Junior">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Runner junior">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Runner Junior</h5>
-                            <p class="card-text text-muted small">Alta energía</p>
-                            <p class="fw-bold text-primary mb-2">$125.000 COP</p>
-                            <p class="card-text small">Diseñado para correr y saltar sin límites.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="casuales" data-price="138000" data-name="Slip-On Kids">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Slip-on kids">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Slip-On Kids</h5>
-                            <p class="card-text text-muted small">Fácil de poner</p>
-                            <p class="fw-bold text-primary mb-2">$138.000 COP</p>
-                            <p class="card-text small">Autonomía y comodidad para los peques.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="formales" data-price="148000" data-name="Mocasín Junior">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Mocasín junior">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Mocasín Junior</h5>
-                            <p class="card-text text-muted small">Estilo elegante</p>
-                            <p class="fw-bold text-primary mb-2">$148.000 COP</p>
-                            <p class="card-text small">Perfecto para ocasiones especiales.</p>
-                            <button class="btn btn_cta mt-auto">Conocer más</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col product-item" data-category="ninos" data-style="casuales" data-price="118000" data-name="Zapatilla Velcro">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <span class="badge-oferta">-15%</span>
-                        <img src="./img/colegial_nina_1.jpg" class="card-img-top" alt="Zapatilla velcro">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Zapatilla Velcro</h5>
-                            <p class="card-text text-muted small">Súper práctica</p>
-                            <p class="fw-bold text-primary mb-2">$118.000 COP</p>
-                            <p class="card-text small">Cierre de velcro para mayor facilidad.</p>
+                            <h5 class="card-title">Mocasín Negro</h5>
+                            <p class="card-text text-muted small">Cuero resistente</p>
+                            <p class="fw-bold mb-2">$95.000 COP</p>
+                            <p class="card-text small">Durabilidad para el día escolar.</p>
                             <button class="btn btn_cta mt-auto">Conocer más</button>
                         </div>
                     </div>
@@ -484,21 +294,6 @@
 
             </div>
         </section>
-
-        <!-- PAGINACIÓN
-        <nav aria-label="Navegación de páginas" class="mb-5">
-            <ul class="pagination justify-content-center" id="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                </li>
-            </ul>
-        </nav> -->
 
     </main>
 
@@ -508,46 +303,71 @@
             <div class="row g-4">
                 <!-- Columna 1: Logo y descripción -->
                 <div class="col-md-4">
-                    <h3 class="logo mb-3" style="color: white;">Calzado Carcelly</h3>
-                    <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 20 años.</p>
+                    <h3 class="logo mb-3 text-white">Calzado Carcelly</h3>
+                    <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 30 años.</p>
                     <div class="social-icons mt-3">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-envelope fs-4"></i></a>
+                        <a href="https://www.facebook.com/Carcelly" class="title-color me-3" target="_blank">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="https://www.instagram.com/calzadocarcelly" class="title-color me-3" target="_blank">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="title-color me-3">
+                            <i class="bi bi-whatsapp fs-4"></i>
+                        </a>
+                        <a href="./contacto.html" class="title-color">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Columna 2: Enlaces rápidos -->
                 <div class="col-md-2">
-                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <h5 class="mb-3 title-color">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="./index.html" class="text-white text-decoration-none">Inicio</a></li>
-                        <li class="mb-2"><a href="./novedades.html" class="text-white text-decoration-none">Novedades</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ofertas</a></li>
-                        <li class="mb-2"><a href="./contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                        <li class="mb-2">
+                            <a href="../paginas/quienes-somos.html" class="text-white text-decoration-none">¿Quiénes Somos?</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/novedades.html" class="text-white text-decoration-none">Novedades</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/ofertas.html" class="text-white text-decoration-none">Ofertas</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/contacto.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Columna 3: Categorías -->
                 <div class="col-md-2">
-                    <h5 class="mb-3">Categorías</h5>
+                    <h5 class="mb-3 title-color">Categorías</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Hombre</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Mujer</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Niños</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Accesorios</a></li>
+                        <li class="mb-2">
+                            <a href="../paginas/hombres.html" class="text-white text-decoration-none">Hombres</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/escolares.html" class="text-white text-decoration-none">Escolares</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Columna 4: Contacto -->
                 <div class="col-md-4">
-                    <h5 class="mb-3">Contáctanos</h5>
+                    <h5 class="mb-3 title-color">Contáctanos</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-geo-alt"></i> Cali, Valle del Cauca, Colombia</li>
-                        <li class="mb-2"><i class="bi bi-telephone"></i> +57 300 123 4567</li>
-                        <li class="mb-2"><i class="bi bi-envelope"></i> info@calzadocarcelly.com</li>
-                        <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 7:00 PM</li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt"></i> 
+                            Cali, Valle del Cauca, Colombia</li>
+                        <li class="mb-2"><i class="bi bi-telephone">
+                            </i> +57 315 768 0418
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope"></i> calzadocarcelly@gmail.com.com
+                        </li>
+                        <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 4:00 PM
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -560,18 +380,12 @@
                     <p class="mb-0">&copy; 2025 Calzado Carcelly. Todos los derechos reservados.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white text-decoration-none me-3">Política de Privacidad</a>
-                    <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+                    <a href="#" class="text-decoration-none title-color me-3">Política de Privacidad</a>
+                    <a href="#" class="text-decoration-none title-color">Términos y Condiciones</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <!-- JAVASCRIPT PERSONALIZADO -->
-    <script src="./js/todos_los_estilos.js"></script>
     
 </body>
 </html>
