@@ -261,7 +261,7 @@ a {
 .card,
 .card-body,
 .card-title,
-.card-text {
+.card_text--color {
     color: var(--black-color) !important;
 }
 
