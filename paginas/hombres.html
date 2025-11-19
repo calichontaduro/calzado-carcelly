@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Descubre Calzado Carcelly, donde la comodidad se encuentra con el arte en cada par de zapatos artesanales hechos a mano. Explora nuestra colección única de calzado de cuero, diseñado para ofrecer estilo y durabilidad. Encuentra el par perfecto que combina tradición y modernidad, ideal para cualquier ocasión." />
+    <meta name="keywords"
+    content="Calzado artesanal, Zapatos hechos a mano, Calzado de cuero artesanal, Zapatos artesanales de calidad,Tienda de calzado artesano, Calzado artesanal en Colombia, Zapatos de diseño artesanal, Calzado cómodo y duradero, Zapatos artesanales exclusivos, Calzado Carcelly" />
+    <meta name="author" content="Calzado Carcelly" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- FUENTES GWENDOLINE - POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ICONO NAVEGADOR -->
+    <link rel="shortcut icon" href="../logo/logo.png" type="png">
+
+    <!-- COLOR DEL NAVEGADOR MÓVIL -->
+    <meta name="theme-color" content="#383838">
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>¿Quiénes Somos? | Calzado Carcelly</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="fixed-top">
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar navbar-expand-lg bg-navbar position-relative">
+            <div class="container-lg">
+                <a class="navbar-brand logo" href="../index.html">Calzado Carcelly</a>
+
+                <!-- MENÚ HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header bg-navbar">
+                        <i class="bi bi-x-circle-fill ms-auto fs-2" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                    </div>
+                    <div class="offcanvas-body bg-navbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/hombres.html">Hombres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/escolares.html">Escolares</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-3" href="../paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn_cta ofertas" href="../paginas/ofertas.html">Ofertas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MODELOS DE LA TEMPORADA -->
+    <section id="nuevos-modelos" class="container-lg py-5 mt-5">
+        <h2 class="text-center my-5">Modelos para Hombres</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+            <div class="col product-item">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <span class="badge-nuevo">Nuevo</span>
+                        <img src="../img/zapato_formal_1.jpg"
+                        class="card-img-top" alt="Zapato de cuero artesanal modelo 'Raices Urbanas'">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Colección "Raices Urbanas"</h5>
+                        <p class="card-text text-muted small">Hecho en Cuero</p>
+                        <p class="card-text">Elegancia clásica con alma contemporánea.</p>
+                        <p class="fw-bold fs-5 mb-2">$120.000 COP</p>
+                        <button type="button" class="btn btn_cta mt-auto" data-bs-toggle="modal" data-bs-target="#raices-urbanas">Ver Detale</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Mocasín -->
+            <div class="modal fade" id="raices-urbanas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-4">
+                                <!-- Galería -->
+                                <div class="col-lg-6">
+                                    <div class="main-image-modal mb-3 position-relative">
+                                        <img src="../img/zapato_formal_2.jpg" alt="Producto" id="modalMainImage" class="img-fluid rounded" style="width:100%; height:450px; object-fit:cover;">
+                                        <span class="position-absolute top-0 end-0 m-3" id="modalBadge" style="display:none;"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Info -->
+                                <div class="col-lg-6">
+                                    <span class="badge badge-nuevo mb-2" id="modalCategory">Hombre</span>
+                                    <h2 class="mb-3" id="modalTitle" style="font-size:1.75rem; font-weight:700;">Raices Urbanas</h2>
+                                
+                                    <div class="rating mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="ms-2 text-muted">(125 opiniones)</span>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <span class="fs-2 fw-bold" id="modalPrice">$120.000</span>
+                                    </div>
+
+                                    <p class="text-muted mb-4" id="modalDescription">Elegancia clásica con alma contemporánea. Raíces Urbanas fusiona cuero de alta calidad, detalles vibrantes y diseño artesanal para quienes caminan con estilo y autenticidad.
+                                    </p>
+
+                                    <!-- Tallas -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold">Tallas Disponibles</label>
+                                        <div class="d-flex gap-2 flex-wrap" id="sizeOptions">
+                                            <button class="size-btn-modal" data-size="38">38</button>
+                                            <button class="size-btn-modal" data-size="39">39</button>
+                                            <button class="size-btn-modal" data-size="40">40</button>
+                                            <button class="size-btn-modal active" data-size="41">41</button>
+                                            <button class="size-btn-modal" data-size="42">42</button>
+                                            <button class="size-btn-modal" data-size="43">43</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Condiciones de Entrega -->
+                                    <div class="bg-light p-3 rounded">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-truck text-primary me-2"></i>
+                                            <span class="small">Envío gratis en compras superiores a $200.000</span>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-arrow-repeat text-primary me-2"></i>
+                                            <span class="small">Devolución gratis en 30 días</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-shield-check text-primary me-2"></i>
+                                            <span class="small">Garantía de calidad artesanal</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <span class="badge-destacado">Destacado</span>
+                    <img src="../img/mocasin_azul.JPG" class="card-img-top"
+                        alt="Deportivos de cuero hechos a mano modelo 'Urbano'">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mocasín Azul</h5>
+                        <p class="card-text text-muted small">Sintético</p>
+                        <p class="card-text">Comodidad, ligereza y versatilidad para tu día a día.</p>
+                        <p class="fw-bold fs-5 mb-2">$95.000 COP</p>
+                        <button type="button" class="btn btn_cta mt-auto" data-bs-toggle="modal" data-bs-target="#mocasin-azul">Ver Detale</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Mocasín -->
+            <div class="modal fade" id="mocasin-azul" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-4">
+                                <!-- Galería -->
+                                <div class="col-lg-6">
+                                    <div class="main-image-modal mb-3 position-relative">
+                                        <img src="../img/mocasin_azul.JPG" alt="Producto" id="modalMainImage" class="img-fluid rounded" style="width:100%; height:450px; object-fit:cover;">
+                                        <span class="position-absolute top-0 end-0 m-3" id="modalBadge" style="display:none;"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Info -->
+                                <div class="col-lg-6">
+                                    <span class="badge badge-nuevo mb-2" id="modalCategory">Hombre</span>
+                                    <h2 class="mb-3" id="modalTitle" style="font-size:1.75rem; font-weight:700;">Mocasín Azul</h2>
+                                
+                                    <div class="rating mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                        <span class="ms-2 text-muted">(89 opiniones)</span>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <span class="fs-2 fw-bold" id="modalPrice">$95.000</span>
+                                    </div>
+
+                                    <p class="text-muted mb-4" id="modalDescription">Estilo sin esfuerzo. Este slip-on en tono Azul combina diseño minimalista, ajuste cómodo y suela antideslizante para un look casual que se adapta a cualquier ocasión.
+                                    </p>
+
+                                    <!-- Tallas -->
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold">Tallas Disponibles</label>
+                                        <div class="d-flex gap-2 flex-wrap" id="sizeOptions">
+                                            <button class="size-btn-modal" data-size="38">38</button>
+                                            <button class="size-btn-modal" data-size="39">39</button>
+                                            <button class="size-btn-modal" data-size="40">40</button>
+                                            <button class="size-btn-modal active" data-size="41">41</button>
+                                            <button class="size-btn-modal" data-size="42">42</button>
+                                            <button class="size-btn-modal" data-size="43">43</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Condiciones de Entrega -->
+                                    <div class="bg-light p-3 rounded">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-truck text-primary me-2"></i>
+                                            <span class="small">Envío gratis en compras superiores a $200.000</span>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <i class="bi bi-arrow-repeat text-primary me-2"></i>
+                                            <span class="small">Devolución gratis en 30 días</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-shield-check text-primary me-2"></i>
+                                            <span class="small">Garantía de calidad artesanal</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <img src="https://images.pexels.com/photos/7795373/pexels-photo-7795373.jpeg" class="card-img-top"
+                        alt="Botines de cuero con detalles tejidos a mano modelo 'Andino'">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Botín "Andino"</h5>
+                        <p class="card-text text-muted small">Lanzamiento: Septiembre 2025</p>
+                        <p class="card-text">Resistencia y tradición. Botines robustos con detalles tejidos, hechos
+                            para durar.</p>
+                        <button class="btn btn_cta mt-auto">Ver Detalle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <span class="badge-oferta">-15%</span>
+                    <img src="https://images.pexels.com/photos/8670488/pexels-photo-8670488.jpeg" class="card-img-top"
+                        alt="Mocasines de mujer en colores vibrantes">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Mocasín "Vibrante"</h5>
+                        <p class="card-text text-muted small">Lanzamiento: Verano 2025</p>
+                        <p class="card-text">Atrévete con el color. Comodidad sin igual para los días cálidos.</p>
+                        <button class="btn btn_cta mt-auto">Ver Detalle</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container-lg">
+            <div class="row g-4">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="col-md-4">
+                    <h3 class="logo mb-3 text-white">Calzado Carcelly</h3>
+                    <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 30 años.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/Carcelly" class="title-color me-3" target="_blank">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="https://www.instagram.com/calzadocarcelly" class="title-color me-3" target="_blank">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="title-color me-3">
+                            <i class="bi bi-whatsapp fs-4"></i>
+                        </a>
+                        <a href="./contacto.html" class="title-color">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-md-2">
+                    <h5 class="mb-3 title-color">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="../paginas/quienes-somos.html" class="text-white text-decoration-none">¿Quiénes Somos?</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/novedades.html" class="text-white text-decoration-none">Novedades</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/ofertas.html" class="text-white text-decoration-none">Ofertas</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/contacto.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Categorías -->
+                <div class="col-md-2">
+                    <h5 class="mb-3 title-color">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="../paginas/hombres.html" class="text-white text-decoration-none">Hombres</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../paginas/escolares.html" class="text-white text-decoration-none">Escolares</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="col-md-4">
+                    <h5 class="mb-3 title-color">Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt"></i> 
+                            Cali, Valle del Cauca, Colombia</li>
+                        <li class="mb-2"><i class="bi bi-telephone">
+                            </i> +57 315 768 0418
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope"></i> calzadocarcelly@gmail.com.com
+                        </li>
+                        <li class="mb-2"><i class="bi bi-clock"></i> Lun - Sáb: 9:00 AM - 4:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-light">
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Calzado Carcelly. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none title-color me-3">Política de Privacidad</a>
+                    <a href="#" class="text-decoration-none title-color">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

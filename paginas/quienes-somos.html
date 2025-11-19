@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Descubre Calzado Carcelly, donde la comodidad se encuentra con el arte en cada par de zapatos artesanales hechos a mano. Explora nuestra colección única de calzado de cuero, diseñado para ofrecer estilo y durabilidad. Encuentra el par perfecto que combina tradición y modernidad, ideal para cualquier ocasión." />
+    content="Descubre Calzado Carcelly, donde la comodidad se encuentra con el arte en cada par de zapatos artesanales hechos a mano. Explora nuestra colección única de calzado de cuero, diseñado para ofrecer estilo y durabilidad. Encuentra el par perfecto que combina tradición y modernidad, ideal para cualquier ocasión." />
     <meta name="keywords"
-        content="Calzado artesanal, Zapatos hechos a mano, Calzado de cuero artesanal, Zapatos artesanales de calidad,Tienda de calzado artesano, Calzado artesanal en Colombia, Zapatos de diseño artesanal, Calzado cómodo y duradero, Zapatos artesanales exclusivos, Calzado Carcelly" />
+    content="Calzado artesanal, Zapatos hechos a mano, Calzado de cuero artesanal, Zapatos artesanales de calidad,Tienda de calzado artesano, Calzado artesanal en Colombia, Zapatos de diseño artesanal, Calzado cómodo y duradero, Zapatos artesanales exclusivos, Calzado Carcelly" />
     <meta name="author" content="Calzado Carcelly" />
 
     <!-- BOOTSTRAP -->
@@ -20,56 +19,58 @@
     <!-- FUENTES GWENDOLINE - POPPINS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- ICONO NAVEGADOR -->
-    <link rel="shortcut icon" href="./logo/logo.png" type="png">
+    <link rel="shortcut icon" href="../logo/logo.png" type="png">
+
     <!-- COLOR DEL NAVEGADOR MÓVIL -->
-    <meta name="theme-color" content="#261893">
+    <meta name="theme-color" content="#383838">
 
     <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <title>¿Quiénes Somos? | Zapatos Hechos a Mano y Artesanales</title>
+    <title>¿Quiénes Somos? | Calzado Carcelly</title>
 </head>
-
 <body>
     <!-- HEADER -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-navbar">
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar navbar-expand-lg bg-navbar position-relative">
             <div class="container-lg">
-                <a class="navbar-brand logo" href="./index.html">Calzado Carcelly</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                    aria-controls="staticBackdrop" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand logo" href="../index.html">Calzado Carcelly</a>
+
+                <!-- MENÚ HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1"></i>
                 </button>
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-                    aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header bg-navbar">
+                        <i class="bi bi-x-circle-fill ms-auto fs-2" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                     </div>
-                    <ul class="navbar-nav ms-auto offcanvas-body">
-                        <li class="nav-item">
-                            <a class="nav-link active offcanvas-title" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./novedades.html">Novedades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hombre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Niños</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-3" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn btn_cta" href="#">Ofertas</button>
-                        </li>
-                    </ul>
+                    <div class="offcanvas-body bg-navbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/hombres.html">Hombres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/escolares.html">Escolares</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-3" href="../paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn_cta ofertas" href="../paginas/ofertas.html">Ofertas</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -88,15 +89,18 @@
             <div class="col-lg-7 col-12">
                 <h3 class="mb-4">Sus Orígenes</h3>
                 <p class="mb-4">
-                    En un pequeño taller en el corazón de la ciudad, <b>Carlos Cepeda Lizarazo</b> comenzó a dar forma a su sueño. Con herramientas sencillas y una habilidad innata, creaba zapatos a medida que reflejaban la elegancia y el confort. Su reputación creció rápidamente, atrayendo a clientes que valoraban la autenticidad y el trabajo bien hecho.
+                    En un pequeño taller del barrio Obrero, en el corazón vibrante de Cali, Colombia, Carlos Cepeda Lizarazo comenzó a dar forma a su sueño. Rodeado de calles llenas de historia y comunidad trabajadora, con herramientas sencillas y una habilidad innata, creaba zapatos a medida que reflejaban la elegancia, el confort y el carácter de quienes los usaban. Cada par era una obra de dedicación, moldeada con paciencia y pasión.
                 </p>
-                <p class="text-background-dark/80 dark:text-background-light/80">
-                    A lo largo de los años, hemos evolucionado, pero sin perder nuestra esencia. Hemos ampliado nuestra gama, incorporando nuevas técnicas, pero siempre manteniendo el cuidado artesanal que nos distingue.
+                <p class="mb-4">
+                    Su reputación creció rápidamente, atrayendo a clientes que valoraban la autenticidad, el trabajo bien hecho y el calor humano que solo un oficio artesanal puede ofrecer. Lo que comenzó como un emprendimiento modesto en un barrio popular, pronto se convirtió en un referente de calidad y tradición.
+                </p>
+                <p class="mb-4">
+                    A lo largo de los años, hemos evolucionado, ampliando nuestra gama y adoptando nuevas técnicas, pero sin perder nuestra esencia. El cuidado artesanal que nos distingue sigue presente en cada costura, en cada diseño, en cada paso que damos. Hoy, seguimos honrando nuestras raíces en el barrio Obrero, llevando con orgullo el legado de Carlos a nuevas generaciones que valoran lo auténtico.
                 </p>
             </div>
 
             <div class="col-lg-5 col-12">
-                <img alt="Taller de zapatería antiguo" class="w-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAU6Z1hcgO6tbyKIwqpBn0csl3fDteauWJ1O4KfbtYqlmBwHhm126IfNhuimqT7QdAQt9TtTqzpUpmmDWl3KAAE3GswGAILvWAEXtYLkd7Ol3GgUbeR2rqAH88NXoDZSGR1CrQyNWTiaIPJg22WatodfquYeqPA5WAJeZNmEsv8g39rogrTP__SbHf0B0YMrxuwgOK8OTKBJ-JhaltzXffvgOfMPHNoFqQpWgBeP82LdX9X_FwwLvCa0NkJfGrdoBpHb0MrJzLqGQ" />
+                <img alt="Taller de zapatería antiguo" class="w-100" src="../img/carcelly.jpg" />
             </div>
         </section>
 
@@ -113,7 +117,7 @@
         </div>
     </main>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="bg-dark text-white py-5">
         <div class="container-lg">
             <div class="row g-4">
@@ -122,16 +126,16 @@
                     <h3 class="logo mb-3 text-white">Calzado Carcelly</h3>
                     <p>Artesanía colombiana en cada paso. Calidad, comodidad y diseño excepcional desde hace más de 30 años.</p>
                     <div class="social-icons mt-3">
-                        <a href="#" class="text-white me-3">
+                        <a href="https://www.facebook.com/Carcelly" class="title-color me-3" target="_blank">
                             <i class="bi bi-facebook fs-4"></i>
                         </a>
-                        <a href="#" class="text-white me-3">
+                        <a href="https://www.instagram.com/calzadocarcelly" class="title-color me-3" target="_blank">
                             <i class="bi bi-instagram fs-4"></i>
                         </a>
-                        <a href="#" class="text-white me-3">
+                        <a href="#" class="title-color me-3">
                             <i class="bi bi-whatsapp fs-4"></i>
                         </a>
-                        <a href="#" class="text-white">
+                        <a href="./contacto.html" class="title-color">
                             <i class="bi bi-envelope fs-4"></i>
                         </a>
                     </div>
@@ -142,16 +146,16 @@
                     <h5 class="mb-3 title-color">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="#" class="text-white text-decoration-none">¿Quiénes Somos?</a>
+                            <a href="../paginas/quienes-somos.html" class="text-white text-decoration-none">¿Quiénes Somos?</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./novedades.html" class="text-white text-decoration-none">Novedades</a>
+                            <a href="../paginas/novedades.html" class="text-white text-decoration-none">Novedades</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-white text-decoration-none">Ofertas</a>
+                            <a href="../paginas/ofertas.html" class="text-white text-decoration-none">Ofertas</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./contacto.html" class="text-white text-decoration-none">Contacto</a>
+                            <a href="../paginas/contacto.html" class="text-white text-decoration-none">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -161,13 +165,10 @@
                     <h5 class="mb-3 title-color">Categorías</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="#" class="text-white text-decoration-none">Hombre</a>
+                            <a href="../paginas/hombres.html" class="text-white text-decoration-none">Hombres</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="text-white text-decoration-none">Niños</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="text-white text-decoration-none">Colegiales</a>
+                            <a href="../paginas/escolares.html" class="text-white text-decoration-none">Escolares</a>
                         </li>
                     </ul>
                 </div>
@@ -180,7 +181,7 @@
                             <i class="bi bi-geo-alt"></i> 
                             Cali, Valle del Cauca, Colombia</li>
                         <li class="mb-2"><i class="bi bi-telephone">
-                            </i> +57 300 123 4567
+                            </i> +57 315 768 0418
                         </li>
                         <li class="mb-2">
                             <i class="bi bi-envelope"></i> calzadocarcelly@gmail.com.com
@@ -199,8 +200,8 @@
                     <p class="mb-0">&copy; 2025 Calzado Carcelly. Todos los derechos reservados.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="#" class="text-white text-decoration-none me-3">Política de Privacidad</a>
-                    <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+                    <a href="#" class="text-decoration-none title-color me-3">Política de Privacidad</a>
+                    <a href="#" class="text-decoration-none title-color">Términos y Condiciones</a>
                 </div>
             </div>
         </div>

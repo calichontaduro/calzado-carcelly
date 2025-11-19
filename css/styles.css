@@ -45,9 +45,8 @@ a {
     }
 }
 
-.bi,
 .btn-close {
-    color: #fff !important;
+    color: var(--white-color) !important;
     border: none !important;
 }
 
@@ -66,6 +65,10 @@ a {
         color: var(--black-color);
         border: 1px solid var(--black-color);
     }
+}
+
+.ofertas {
+    color: var(--black-color) !important;
 }
 
 .navbar-nav a {
@@ -275,6 +278,29 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* ESTILOS MODADES */
+.size-btn-modal {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--white-color);
+    background: var(--white-color);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn-modal:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.size-btn-modal.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
 /* FOOTER */
